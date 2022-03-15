@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Copyright (c) 2015 - 2020 Molkobain.
  *
@@ -7,7 +8,7 @@
  * Use of this extension is bound by the license you purchased. A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. There are several licenses available (see https://www.molkobain.com/usage-licenses/ for more informations)
  */
 
-if(!isset($aMolkobainThesaurus)) $aMolkobainThesaurus = [];
+if (!isset($aMolkobainThesaurus)) $aMolkobainThesaurus = [];
 /** @var array $aMolkobainThesaurus Used to centralize from strings and use them in the dict. entries */
 $aMolkobainThesaurus = array_merge($aMolkobainThesaurus, [
 	// Datamodel
@@ -26,19 +27,6 @@ $aMolkobainThesaurus = array_merge($aMolkobainThesaurus, [
 
 // Classes
 Dict::Add('DE DE', 'German', 'German', array(
-	// - LocationType
-	'Class:LocationType' => 'Standort-Typ',
-	'Class:LocationType/Attribute:name' => 'Name',
-	'Class:LocationType/Attribute:name+' => 'Zum Bsp: Land, Bundesland, Stadt, Gebäude, Stockwerk, Raum, ...',
-	'Class:LocationType/Attribute:locations_list' => 'Standorte',
-	'Class:LocationType/Attribute:locations_list+' => 'Liste aller Standorte diesen Typs',
-	// - Location
-	'Class:Location/Attribute:locationtype_id' => 'Typ',
-	'Class:Location/Attribute:locationtype_id+' => 'Welche Art von Standort ist es und welchen Zweck hat es?',
-	'Class:Location/Attribute:parent_id' => 'Eltern',
-	'Class:Location/Attribute:parent_id+' => 'Standort, wo sich dieses befindet (z.B. ein \'Raum\', \'Stockwerk\' oder ein \'Gebäude\')',
-	'Class:Location/Attribute:locations_list' => 'Kinder-Standorte',
-	'Class:Location/Attribute:locations_list+' => 'Liste aller beinhalteten Standorte',
 	// - PhysicalDevice (default entries for custom classes)
 	'Class:PhysicalDevice/Attribute:nb_u' => sprintf($aMolkobainThesaurus['Class/Attribute:nb_u']),
 	'Class:PhysicalDevice/Attribute:nb_u+' => sprintf($aMolkobainThesaurus['Class/Attribute:nb_u+'], 'dem Element'),

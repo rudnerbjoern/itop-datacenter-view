@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Copyright (c) 2015 - 2020 Molkobain.
  *
@@ -7,7 +8,7 @@
  * Use of this extension is bound by the license you purchased. A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. There are several licenses available (see https://www.molkobain.com/usage-licenses/ for more informations)
  */
 
-if(!isset($aMolkobainThesaurus)) $aMolkobainThesaurus = [];
+if (!isset($aMolkobainThesaurus)) $aMolkobainThesaurus = [];
 /** @var array $aMolkobainThesaurus Used to centralize from strings and use them in the dict. entries */
 $aMolkobainThesaurus = array_merge($aMolkobainThesaurus, [
 	// Datamodel
@@ -26,19 +27,6 @@ $aMolkobainThesaurus = array_merge($aMolkobainThesaurus, [
 
 // Classes
 Dict::Add('SV SV', 'Swedish', 'Svenska', array(
-	// - LocationType
-	'Class:LocationType' => 'Typ av plats',
-	'Class:LocationType/Attribute:name' => 'Namn',
-	'Class:LocationType/Attribute:name+' => 'Till exempel: Land, Län, Stad, Byggnad, Våning, Rum, ...',
-	'Class:LocationType/Attribute:locations_list' => 'Platser',
-	'Class:LocationType/Attribute:locations_list+' => 'Lista över alla platser av denna typ',
-	// - Location
-	'Class:Location/Attribute:locationtype_id' => 'Typ',
-	'Class:Location/Attribute:locationtype_id+' => 'Vilken sort av plats är detta eller vilket syfte den har?',
-	'Class:Location/Attribute:parent_id' => 'Huvudplats',
-	'Class:Location/Attribute:parent_id+' => 'plats som hostar denna (ex. för ett \'rum\', skal vara en \'våning\' eller en \'byggnad\')',
-	'Class:Location/Attribute:locations_list' => 'Inkluderade platser',
-	'Class:Location/Attribute:locations_list+' => 'Lista över alla platser som är inkluderade i denna',
 	// - PhysicalDevice (default entries for custom classes)
 	'Class:PhysicalDevice/Attribute:nb_u' => sprintf($aMolkobainThesaurus['Class/Attribute:nb_u']),
 	'Class:PhysicalDevice/Attribute:nb_u+' => sprintf($aMolkobainThesaurus['Class/Attribute:nb_u+'], 'element'),

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Copyright (c) 2015 - 2020 Molkobain.
  *
@@ -7,7 +8,7 @@
  * Use of this extension is bound by the license you purchased. A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. There are several licenses available (see https://www.molkobain.com/usage-licenses/ for more informations)
  */
 
-if(!isset($aMolkobainThesaurus)) $aMolkobainThesaurus = [];
+if (!isset($aMolkobainThesaurus)) $aMolkobainThesaurus = [];
 /** @var array $aMolkobainThesaurus Used to centralize from strings and use them in the dict. entries */
 $aMolkobainThesaurus = array_merge($aMolkobainThesaurus, [
 	// Datamodel
@@ -26,19 +27,6 @@ $aMolkobainThesaurus = array_merge($aMolkobainThesaurus, [
 
 // Classes
 Dict::Add('EN US', 'English', 'English', array(
-	// - LocationType
-	'Class:LocationType' => 'Location type',
-	'Class:LocationType/Attribute:name' => 'Name',
-	'Class:LocationType/Attribute:name+' => 'For example: Country, State, City, Building, Floor, Room, ...',
-	'Class:LocationType/Attribute:locations_list' => 'Locations',
-	'Class:LocationType/Attribute:locations_list+' => 'List of all locations of this type',
-	// - Location
-	'Class:Location/Attribute:locationtype_id' => 'Type',
-	'Class:Location/Attribute:locationtype_id+' => 'What kind of location is it or what purpose does it have?',
-	'Class:Location/Attribute:parent_id' => 'Parent',
-	'Class:Location/Attribute:parent_id+' => 'Location hosting this one (eg. For a \'room\', should be a \'floor\' or a \'building\')',
-	'Class:Location/Attribute:locations_list' => 'Child locations',
-	'Class:Location/Attribute:locations_list+' => 'List of all locations included in this one',
 	// - PhysicalDevice (default entries for custom classes)
 	'Class:PhysicalDevice/Attribute:nb_u' => sprintf($aMolkobainThesaurus['Class/Attribute:nb_u']),
 	'Class:PhysicalDevice/Attribute:nb_u+' => sprintf($aMolkobainThesaurus['Class/Attribute:nb_u+'], 'the element'),

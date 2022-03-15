@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Copyright (c) 2015 - 2020 Molkobain.
  *
@@ -7,7 +8,7 @@
  * Use of this extension is bound by the license you purchased. A license grants you a non-exclusive and non-transferable right to use and incorporate the item in your personal or commercial projects. There are several licenses available (see https://www.molkobain.com/usage-licenses/ for more informations)
  */
 
-if(!isset($aMolkobainThesaurus)) $aMolkobainThesaurus = [];
+if (!isset($aMolkobainThesaurus)) $aMolkobainThesaurus = [];
 /** @var array $aMolkobainThesaurus Used to centralize from strings and use them in the dict. entries */
 $aMolkobainThesaurus = array_merge($aMolkobainThesaurus, [
 	// Datamodel
@@ -26,19 +27,6 @@ $aMolkobainThesaurus = array_merge($aMolkobainThesaurus, [
 
 // Classes
 Dict::Add('CS CZ', 'Czech', 'Čeština', array(
-	// - LocationType
-	'Class:LocationType' => 'Typy míst',
-	'Class:LocationType/Attribute:name' => 'Jméno',
-	'Class:LocationType/Attribute:name+' => 'Například: Země, Kraj, Město, Budova, Podlaží, Místnost, ...',
-	'Class:LocationType/Attribute:locations_list' => 'Místa',
-	'Class:LocationType/Attribute:locations_list+' => 'Seznam všech místo tohoto typu',
-	// - Location
-	'Class:Location/Attribute:locationtype_id' => 'Typ',
-	'Class:Location/Attribute:locationtype_id+' => 'O jaký druh místa se jedná, popř. jaký má význam?',
-	'Class:Location/Attribute:parent_id' => 'Rodič',
-	'Class:Location/Attribute:parent_id+' => 'Místo, na kterém se nachází (např. pro  \'místnost\', by mělo být \'podlaží\' nebo \'budova\')',
-	'Class:Location/Attribute:locations_list' => 'Podřízená místa',
-	'Class:Location/Attribute:locations_list+' => 'Seznam všech míst zde obsažených',
 	// - PhysicalDevice (default entries for custom classes)
 	'Class:PhysicalDevice/Attribute:nb_u' => sprintf($aMolkobainThesaurus['Class/Attribute:nb_u']),
 	'Class:PhysicalDevice/Attribute:nb_u+' => sprintf($aMolkobainThesaurus['Class/Attribute:nb_u+'], 'prvek'),
