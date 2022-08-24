@@ -61,6 +61,8 @@ Dict::Add('SV SV', 'Swedish', 'Svenska', array(
 Dict::Add('SV SV', 'Swedish', 'Svenska', array(
 	'Molkobain:DatacenterView:Tabs:View:Title' => 'Graphisk vy',
 	'Molkobain:DatacenterView:NoElement' => 'Inget element',
+	// - Messages
+	'Molkobain:DatacenterView:WarningMessage:NoHeightForHost' => 'No height defined for the element, devices might not display correctly.~~',
 	// - Legend
 	'Molkobain:DatacenterView:Legend:Title' => 'Legend',
 	// - Filter
