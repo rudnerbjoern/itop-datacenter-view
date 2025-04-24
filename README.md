@@ -49,7 +49,7 @@ Full presentation & documentation available of the advanced features are availab
   * [Reserved slots & Zero-U devices](https://molkobain.github.io/itop-extensions-documentation/molkobain-datacenter-view-extended/#documentation)
   * [And more](https://molkobain.github.io/itop-extensions-documentation/molkobain-datacenter-view-extended/#documentation)
 
-👋 _Paid version is now available on [Molkobain I/O](https://www.molkobain.com/product/datacenter-view-extended/)!_
+👋 _Paid version is now available on [iTop Hub](https://store.itophub.io/en_US/products/molkobain-datacenter-view-extended)!_
 
 ## Online demo
 You can try this extension on the online demo. There are already some racks, enclosures and devices mounted as an example. Just click on the links below to access it:
@@ -80,6 +80,7 @@ I would like to give a special thank you to the people who contributed to this
  * Abello, Stephen  a.k.a [@steffunky](https://github.com/steffunky)
  * Beer, Christian a.k.a [@ChristianBeer](https://github.com/ChristianBeer)
  * Bostoen, Jeffrey a.k.a [@jbostoen](https://github.com/jbostoen)
+ * Casteleyn, Thomas a.k.a [@Hipska](https://github.com/Hipska)
  * Makhlouf, Hadi
  * Sedlak, Zdenek a.k.a [@xmstspider](https://github.com/xmstspider)
  * Schirrmann, Pascal a.k.a [@Schirrms](https://github.com/Schirrms)
@@ -101,8 +102,10 @@ Everything is included in the distributed packages, no extra effort needed.
 
 ### iTop modules
 
-  * Module [molkobain-handy-framework](https://github.com/Molkobain/itop-handy-framework)
   * Module [molkobain-console-tooltips](https://github.com/Molkobain/itop-console-tooltips)
+  * Module [molkobain-datacenter-view-bridge-for-combodo-location-hierarchy](https://github.com/Molkobain/itop-datacenter-view-bridge-for-combodo-location-hierarchy)
+  * Module [molkobain-fontawesome5-pack](https://github.com/Molkobain/itop-fontawesome5-pack)
+  * Module [molkobain-handy-framework](https://github.com/Molkobain/itop-handy-framework)
   * Module [molkobain-newsroom-provider](https://github.com/Molkobain/itop-newsroom-provider)
 
 ### Third parties
